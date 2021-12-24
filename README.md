@@ -11,7 +11,12 @@ The files in this repository were used to configure the network depicted below.
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
-Ansible/filebeat-config.yml
+[filebeat-config.yml](https://github.com/bradygg/CyberSecurityProject1/blob/903ab4f17d34655866a03cdb4b58813d657afd3a/Ansible/filebeat-config.yml)
+[elk.yml](https://github.com/bradygg/CyberSecurityProject1/blob/903ab4f17d34655866a03cdb4b58813d657afd3a/Ansible/elk.yml)
+[filebeat-playbook.yml](https://github.com/bradygg/CyberSecurityProject1/blob/903ab4f17d34655866a03cdb4b58813d657afd3a/Ansible/filebeat-playbook.yml)
+[metricbeat-config.yml](https://github.com/bradygg/CyberSecurityProject1/blob/903ab4f17d34655866a03cdb4b58813d657afd3a/Ansible/metricbeat-config.yml)
+[metricbeat-playbook.yml](https://github.com/bradygg/CyberSecurityProject1/blob/903ab4f17d34655866a03cdb4b58813d657afd3a/Ansible/metricbeat-playbook.yml)
+[pentest.yml](https://github.com/bradygg/CyberSecurityProject1/blob/903ab4f17d34655866a03cdb4b58813d657afd3a/Ansible/pentest.yml)
 
 This document contains the following details:
 - Description of the Topologu
