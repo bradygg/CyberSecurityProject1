@@ -6,7 +6,7 @@ Automated ELK Stack Deployment
 
 The files in this repository were used to configure the network depicted below.
 
-[https://github.com/bradygg/CyberSecurityProject1/blob/24ab8fae19fc446f8e65bd2aa3268aa0c0f5b467/Diagrams/networkdiagram.png](Network Diagram.jpg)
+![Network Diagram.jpg](![image](https://user-images.githubusercontent.com/90294658/147308785-5fd59527-cc06-41bb-aa31-fbe869bee313.png))
 
 
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
