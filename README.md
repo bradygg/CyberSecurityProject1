@@ -24,7 +24,7 @@ These files have been tested and used to generate a live ELK deployment on Azure
 [pentest.yml](https://github.com/bradygg/CyberSecurityProject1/blob/903ab4f17d34655866a03cdb4b58813d657afd3a/Ansible/pentest.yml)
 
 This document contains the following details:
-- Description of the Topologu
+- Description of the Topology
 - Access Policies
 - ELK Configuration
   - Beats in Use
@@ -36,12 +36,16 @@ This document contains the following details:
 
 The main purpose of this network is to expose a load-balanced and monitored instance of DVWA, the D*mn Vulnerable Web Application.
 
-Load balancing ensures that the application will be highly _____, in addition to restricting _____ to the network.
-- _TODO: What aspect of security do load balancers protect? What is the advantage of a jump box?_
+Load balancing ensures that the application will be highly available, in addition to restricting access to the network.
+What aspect of security do load balancers protect? What is the advantage of a jump box?
+- Defend against DSoS attacks. Load balancers can guard and protect against unauthorized access. They can request specific credentials prior to access. In this environment Load balancers help with web traffic
+- Remotely gain access to another machine on a network. Used to manage devices in separate security zones as well
 
-Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the _____ and system _____.
-- _TODO: What does Filebeat watch for?_
-- _TODO: What does Metricbeat record?_
+Integrating an ELK server allows users to easily monitor the vulnerable VMs for changes to the files and data and system logs.
+What does Filebeat watch for?
+- Watches log files that you identify and sends them to elasticsearch/Logstash for proper filing
+What does Metricbeat record?
+-Records metrics and statistical data and then send them to the output specified though elasticsearch/Logstash
 
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
