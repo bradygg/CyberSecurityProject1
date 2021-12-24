@@ -142,7 +142,9 @@ Answer the following questions to fill in the blanks:_
 - _Which file is the playbook? Where do you copy it?_
 
 ELK: elk.yml copy file to /etc/ansible/elk.yml
+
 Filebeat: filebeat-playbook.yml copy file to /etc/ansible/filebeat-playbook.yml
+
 Metricbeat: metricbeat-playbook.yml copy file to /etc/ansible/metricbeat-playbook.yml
 
 
