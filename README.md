@@ -50,12 +50,12 @@ What does Metricbeat record?
 The configuration details of each machine may be found below.
 _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdown_tables) to add/remove values from the table_.
 
-| Name     | Function | IP Address | Operating System |
-|----------|----------|------------|------------------|
-| Jump Box | Gateway  | 10.0.0.1   | Linux            |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
-| TODO     |          |            |                  |
+| Name               | Function | IP Address Public/Private | Operation System |
+|--------------------|----------|---------------------------|------------------|
+| JumpBoxProvisioner | Gateway  | 13.67.211.88/10.0.0.7     | Linux            |
+| Web-1              | Server   | 13.89.7.78/10.0.0.8       | Linux            |
+| Web-2              | Server   | 13.89.7.78/10.0.0.6       | Linux            |
+| ELK-Server         | Server   | 52.147.197.240/10.2.0.4   | Linux            |
 
 ### Access Policies
 
