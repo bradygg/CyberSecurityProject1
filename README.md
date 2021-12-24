@@ -69,11 +69,14 @@ Machines within the network can only be accessed by _____.
 
 A summary of the access policies in place can be found in the table below.
 
-| Name     | Publicly Accessible | Allowed IP Addresses |
-|----------|---------------------|----------------------|
-| Jump Box | Yes/No              | 10.0.0.1 10.0.0.2    |
-|          |                     |                      |
-|          |                     |                      |
+| Name               | Publicly Accessible | Allowed IP                                           | Port |
+|--------------------|---------------------|------------------------------------------------------|------|
+| JumpBoxProvisioner | Yes                 | Host IP                                              | 22   |
+| Web-1 (VM)         | No                  | JumpBoxProvisioner via Docker Container              |      |
+| Web-2 (VM)         | No                  | JumpBoxProvisioner via Docker Container              |      |
+| LoadBalancer       | Yes                 | Host IP                                              | 80   |
+| ELK-Server         | Yes                 | Host IP                                              | 5601 |
+| ELK-Server         | No                  | Peering Connection between existing virtual networks |      |
 
 ### Elk Configuration
 
