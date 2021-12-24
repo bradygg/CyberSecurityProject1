@@ -83,12 +83,22 @@ A summary of the access policies in place can be found in the table below.
 
 Ansible was used to automate configuration of the ELK machine. No configuration was performed manually, which is advantageous because...
 What is the main advantage of automating configuration with Ansible?
+
 -Anisble automation is a simple and fast way of installing/deploying resources or programs in cloud environments for multiple machines massively reducing risks of errors by deploying manually.
 
 The playbook implements the following tasks:
-- _TODO: In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
-- ...
-- ...
+In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Docker; download image; etc._
+
+*SSH into JumpBoxProvioner (ssh azuresuer@13.67.211.88)
+
+*start/attached to ansible docker (sudo docker start  relaxed_goldwasser) & (sudo docker attach relaxed_golnwasser)
+
+*Cd’d into /etc/ansible and created the ELK playbook (nano elk.yml)
+
+*Ran Elk playbook in the directory (ansible playbook elk.yml)
+
+*Finally SSH into ELK-Server to verify up an running ( ssh azureuser@10.2.0.4)
+
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
