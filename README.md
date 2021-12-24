@@ -148,16 +148,18 @@ Filebeat: filebeat-playbook.yml copy file to /etc/ansible/filebeat-playbook.yml
 Metricbeat: metricbeat-playbook.yml copy file to /etc/ansible/metricbeat-playbook.yml
 
 
-- _Which file do you update to make Ansible run the playbook on a specific machine? How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
+- _Which file do you update to make Ansible run the playbook on a specific machine? 
+
+You would have to update the hosts file with the new machines private IP within /etc/ansible/hosts
+
+- How do I specify which machine to install the ELK server on versus which to install Filebeat on?_
 
 There has to be two separate groups set up in the etc/ansible/hosts. One group being webservers which has the Web VMs Private IPs where I install filebeat to. The other group being elk and having the ELK-Server and its private IP
 
 ![Host updates](https://github.com/bradygg/CyberSecurityProject1/blob/0da7f857439f05fdef3dd4133423cdecfa9938a7/Images/ElkServeraddon.jpg)
 
-You would have to update the hosts file with the new machines private IP within /etc/ansible/hosts
-
 - _Which URL do you navigate to in order to check that the ELK server is running?
 
-
+http://52.147.197.240:5601
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
