@@ -102,24 +102,36 @@ In 3-5 bullets, explain the steps of the ELK installation play. E.g., install Do
 
 The following screenshot displays the result of running `docker ps` after successfully configuring the ELK instance.
 
-![TODO: Update the path with the name of your screenshot of docker ps output](Images/docker_ps_output.png)
+![Docker ps output](https://github.com/bradygg/CyberSecurityProject1/blob/0da7f857439f05fdef3dd4133423cdecfa9938a7/Images/SudodockerPS.jpg)
 
 ### Target Machines & Beats
 This ELK server is configured to monitor the following machines:
-- _TODO: List the IP addresses of the machines you are monitoring_
+Web-1 10.0.0.8
+
+Web-2 10.0.0.6
 
 We have installed the following Beats on these machines:
-- _TODO: Specify which Beats you successfully installed_
+Specify which Beats you successfully installed_
+
+-Filebeat and Metricbeat were both installed successfully on Web-1 & Web-2
+
 
 These Beats allow us to collect the following information from each machine:
-- _TODO: In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+-Filebeat is used for collecting log files on remote machines
+Apache, logstash, aws cloud watch files are examples of files that can be generated and stored by filebeat files
+
+-Metricbeat collects machine metrics and monitors systems status
+Docker metrics is an example and also can show health and usage
+
+
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
 
 SSH into the control node and follow the steps below:
-- Copy the _____ file to _____.
-- Update the _____ file to include...
+- Copy the filebeat-config.yml file to /etc/ansible.
+- Update the filebeat-config.yml file to include...
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
 _TODO: Answer the following questions to fill in the blanks:_
